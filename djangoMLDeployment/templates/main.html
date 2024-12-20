@@ -19,16 +19,16 @@
         <form action="" method="POST">
             {% csrf_token %}
             <label for="sepal_length">Sepal Length</label>
-            <input type="number" name="sepal_length" id="sepal_length" required>
+            <input type="number" name="sepal_length" id="sepal_length" step="any" required>
             
             <label for="sepal_width">Sepal Width</label>
-            <input type="number" name="sepal_width" id="sepal_width" required>
+            <input type="number" name="sepal_width" id="sepal_width" step="any" required>
             
             <label for="petal_length">Petal Length</label>
-            <input type="number" name="petal_length" id="petal_length" required>
+            <input type="number" name="petal_length" id="petal_length" step="any" required>
             
             <label for="petal_width">Petal Width</label>
-            <input type="number" name="petal_width" id="petal_width" required>
+            <input type="number" name="petal_width" id="petal_width" step="any" required>
             
             <button type="submit">Submit</button>
         </form>
